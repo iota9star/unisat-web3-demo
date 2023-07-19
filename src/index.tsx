@@ -5,8 +5,21 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import eruda from "eruda";
+// @ts-ignore
+import erudaCode from "eruda-code";
+// @ts-ignore
+import erudaFeatures from "eruda-features";
+// @ts-ignore
+import erudaTiming from "eruda-timing";
+// @ts-ignore
+import erudaMonitor from "eruda-monitor";
 
+eruda.add(erudaCode);
+eruda.add(erudaFeatures);
+eruda.add(erudaTiming);
+eruda.add(erudaMonitor);
 eruda.init();
+
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
